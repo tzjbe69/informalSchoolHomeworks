@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="style/style.css" type="text/css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>Workshop</title>
+    </head>
+    <body>
+        <h1 class="pull-left">Our TEAM</h1>
+        <div class="header clearfix">
+            <span class="search-bttn pull-right"></span>
+            <input type="text" name="search" placeholder="Search" class="pull-right"/>
+            <button id="add-member" class="pull-right">Add member</button>
+        </div>
+        <div class="message centered clearfix">
+            <span id="inner-message" class="pull-left"></span>
+            <span id="closeBttn" class="pull-right">X</span>
+        </div>
+        <div id="team-list">
+            <div class="table-header">
+                <div>Name</div>
+                <div>Job</div>
+                <div>E-mail</div>
+                <div>Actions</div>
+            </div>
+        </div>
+        <div id="form-popup">
+            <form id="hidden-form">
+                <label for="name">Name:</label>
+                <input class="form-input" type="text" name="name"/>
+                <label for="occupation">Job:</label>
+                <input class="form-input" type="text" name="occupation"/>
+                <label for="email">Email:</label>
+                <input class="form-input" type="text" name="email"/>
+            </form>
+        </div>
+        <div class="bottom clearfix">
+            <div id="pagination" class="clearfix centered">
+            </div>
+            <div class="text-select-page centered">Members to display on page: 
+                <select id="selectedPage" name="itemsToShow">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>

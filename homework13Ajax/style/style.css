@@ -1,0 +1,7 @@
+.pull-left {
+    float: left;
+    width: 75%;
+}
+.pull-right {
+    float: right;
+}

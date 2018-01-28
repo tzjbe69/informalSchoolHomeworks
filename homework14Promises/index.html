@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style.css" type="text/css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+    <h1>API exeples</h1>
+    <div>
+        <h2>Chuck Norris Jokes</h2>
+        <label for="joke-number">Enter a number: </label>
+        <input type="text" name="joke-number"/>
+        <div id="show-joke">
+        </div>
+    </div>
+    <div>
+        <h2>Check email server address</h2>
+        <label for="mail-test">Enter email sever:(ex: for xxx@yahoo.com, enter yahoo.com)</label>
+        <input type="text" name="mail-test"/>
+        <input type='submit' id='check-email' name='check-email' value='Test'/>
+        <div id="show-mail">
+        </div>
+    </div>
+    <div>
+        <h2>Simple and fast QR code generator</h2>
+        <label for="qr-input">Enter something you want to make QR</label>
+        <input type="text" name="qr-input"/>
+        <input type='submit' id='qr-generator' name='qr-generator' value='Generate'/>
+        <div id='qr'></div>
+    </div>
+    <div>
+        <h2>And now For SURPRISE:</h2>
+        <p>Random beer recepie(click refresh page if you want another one)</p>
+        <p id='random-beer'></p>
+    </div>
+    </body>
+</html>

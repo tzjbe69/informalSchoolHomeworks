@@ -1,0 +1,162 @@
+/*General*/
+html {
+    background-color: rgb(240, 251, 243);
+}
+
+h1 {
+    margin-left:50px;
+    font-family: Arial;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hide-the-button {
+    display: none;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+button {
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    border-radius: 3px;
+    background: darkgray;
+    margin: 2px 15px;
+}
+
+/*Search*/
+[name='search'] {
+   background: #fcfcfc;
+   border: 1px solid #aaa;
+   border-radius: 5px;
+   box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+   text-indent: 5px;
+   width: 200px;
+   height: 20px;
+   padding-right: 30px;
+}
+
+.search-bttn {
+    display: inline-block;
+    position: relative;
+    top:2.5px;
+    left: -25px;
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Message*/
+.message {
+    background-color: #d3f8d3;
+    color: green;
+    font-family: Arial;
+    border-radius: 4px;
+    padding: 10px 25px;
+    width: 600px;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#addMemberSuccess, #deleteMemberSuccess, #modifyMemberSuccess {
+    display: none;
+ 
+}
+
+#closeBttn:hover {
+    cursor: pointer;
+}
+
+/*Content*/
+.table-header {
+    background-color: #ffe680;
+}
+
+#team-list {
+    display: table;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#team-list > div {
+    display: table-row;
+}
+
+#team-list > div > div {
+    display: table-cell;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+#team-list > div > .mail {
+    width: 300px;
+}
+
+/*Popup*/
+label, input {
+    display: block;
+}
+
+input.form-input {
+    width: 250px;
+}
+
+/*Bottom of page*/
+.bottom {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
+}
+
+.number-of-page{
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: darkgray;
+    margin: 4px;
+}
+
+.number-of-page:hover {
+    cursor: pointer;
+}
+
+.sel {
+    color: white;
+    background-color: dimgray;
+}
+
+.sel:hover {
+    cursor: default;
+}
+
+.text-select-page {
+    top:30px;
+}
+
+#selectedPage{
+    font-size: 10px;
+}
+
+#selectedPage option{
+    font-size: 10px;
+}

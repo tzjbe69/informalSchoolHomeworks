@@ -1,0 +1,174 @@
+/*General*/
+body {
+  background: black;
+  box-sizing: border-box;
+  color: white;
+  font-family: Gadget, sans-serif;
+  font-size: 80%;
+}
+
+h1, h2, h3 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+  color: #9b9b9b;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*More general*/
+
+#header {
+  justify-content: space-around;
+  margin: 75px 0 0 0;
+  width: 100%;
+}
+
+.nav {
+  justify-content: center;
+  background-color: black;
+}
+
+nav {
+  left: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+aside {
+  padding: 15px;
+}
+
+aside ul {
+  padding: 0px;
+}
+
+aside h2 {
+  font-size: 80%;
+}
+
+aside p {
+  font-size: 70%;
+}
+
+aside li {
+  font-size: 75%;
+  margin-top: 20px;
+}
+
+aside li a {
+  color: white;
+  margin-left: 15px;
+  font-style: italic;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.active {
+  color: lightgray;
+}
+
+/*Index page hide images*/
+.place-pic{
+  display: none;
+}
+
+/*Contact Page*/
+/*Form*/
+
+.contact {
+  margin: auto;
+  margin-bottom: 25px;
+  width: 85%;
+}
+
+input, textarea {
+  background-color: whitesmoke;
+  width: 100%;
+  max-width: 400px;
+}
+
+textarea {
+  height: 150px;
+}
+
+[type="submit"] {
+  background-color: gray;
+  color: white;
+}
+
+[type="submit"]:hover {
+  background-color: darkgrey;
+}
+
+/*Media query*/
+@media (min-width: 375px){
+  body {
+    font-size: 100%;
+  }
+}
+@media (min-width: 425px){
+  .place-pic{
+    display: flex;
+  }
+}
+@media (min-width:768px) {
+  header {
+    margin-top: 20px;
+  }
+  
+  .container {
+    width: 75%;
+    margin-left: 200px;
+  }
+  
+  /*Button styles*/
+  .nav {
+    flex-direction: column;
+  }
+  
+  nav {
+    margin-top: 100px;
+    width: 160px;
+  }
+  
+  nav a {
+    background: #A0A0A0;
+    border-radius: 4px;
+    color: #193366;
+    display: block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    margin: 15px;
+    text-align: center;
+    padding: 5px;
+    width: 140px;
+  }
+  
+  nav a:hover {
+    background: gray;
+    color: white;
+  }
+  
+  nav a:active {
+    font-size: 15px;
+  }
+}

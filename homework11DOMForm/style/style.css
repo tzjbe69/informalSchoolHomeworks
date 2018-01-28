@@ -1,0 +1,122 @@
+/*General styles*/
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background-color: gray;
+    padding: 10px 70px;
+}
+
+p {
+    margin: 0;
+}
+
+
+footer {
+    background-color: gray;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*Response bar style*/
+
+.response {
+    visibility: hidden;
+    background-color: #d3f8d3;
+    color: green;
+    font-family: Arial;
+    margin: 16px 0 15px 200px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    width: 600px;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#checkSign {
+    background-color: green;
+    color: #d3f8d3;
+    padding: 1px 4px;
+    border-radius: 50%;
+}
+
+#closeBttn:hover {
+    cursor: pointer;
+}
+
+/*Content style*/
+
+.content {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0 0 100px 200px;
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+    background-color: Azure;
+}
+
+img {
+     width: 280px;
+     height: 300px;
+}
+
+/*Form styles*/
+
+form {
+    width: 245px;
+}
+
+.response p {
+    margin: 0;
+    height: 24px;
+    padding: 3px 0 0 5px;
+}
+
+.form-input {
+    border: 1px solid black;
+}
+
+input[type=text] {
+    padding: 1px;
+    width: 240px;
+    margin-bottom: 20px;
+    background-color: #FFF8DC;
+}
+
+input[type=submit] {
+    background-color: #33ccc7;
+    color: white;
+    border-radius: 6px;
+    height: 25px;
+}
+
+.radio-bttn {
+    margin: 0 0 10px 50px;
+}
+
+textarea.form-input {
+    resize: none;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 240px;
+    background-color: #FFF8DC;
+}

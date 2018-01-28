@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: gray;
+    padding: 20px 70px;
+}
+
+#main-content {
+    margin: 20px 200px;
+}
+
+section {
+    border: 1px solid black;
+    width: 350px;
+    height: 150px;
+    padding: 15px;
+    float: left;
+    background-color: #DCDCDC;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+section p {
+    margin: 0 0 0 70px;
+    
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}

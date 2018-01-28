@@ -1,0 +1,129 @@
+body {
+    background-color: #85144B;
+}
+#articles-content article {
+    border: 1px solid #FF851B;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 80%;
+
+}
+article {
+    
+    color: #FF851B;
+    font-family: Arial;
+}
+
+a {
+    color: white;
+}
+
+button {
+    background-color: #85144B;
+    color: #FF851B;
+    border-color: #FF851B;
+    width: 80px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+h3 {
+    text-align: center
+}
+h3::first-letter {
+    size: 120%;
+    text-transform: uppercase;
+}
+
+.comment {
+    margin-top: 40px;
+}
+
+.comment-body {
+    border: 4px solid #FF851B;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 7px;
+    width: 250px;
+    margin-left: 100px;
+    color: #FF851B;
+    font-size: 80%;
+}
+
+.comment h3 {
+    margin: 3px;
+}
+
+.comment-email {
+    color: white;
+}
+
+#comments-list {
+    margin: 50px 140px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.number-of-page{
+    color: #FF851B;
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: #85144B;
+    margin: 4px;
+    border: 1px solid #FF851B;
+}
+
+.number-of-page:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sel {
+    color: white;
+    background-color: #FF851B;
+}
+
+.sel:hover {
+    opacity: 1;
+    cursor: default;
+}
+label {
+    color: #FF851B;
+    margin: 25px 100px 0 100px;
+    display: block;
+}
+input {
+    color: #FF851B;
+    background-color: #85144B;
+    border-color: #FF851B;
+    margin: 25px 100px 0 100px;
+    width: 60%;
+    display: block;
+}
+textarea {
+    background-color: #85144B;
+    border-color: #FF851B;
+    color: #FF851B;
+    margin: 25px 100px 0 100px;
+    width: 60%;
+    height: 400px;
+    display: block;
+}

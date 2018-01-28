@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+#show-options, #show-options div {
+    display: block;
+}
+
+#show-options {
+    width: 200px;
+    margin: 20px;
+    background-color: #DCDCDC;
+}
+
+#show-weather {
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+    word-spacing: 1.3px;
+    color: lightgray;;
+    color: hsla(208, 100%, 85%, 0.7);
+    background-color: #0074D9;
+    display: inline-block;
+    padding-left: 15px;
+    width: 370px;
+    height: 310px;
+    margin: 20px 20px;
+}
+
+#show-weather h3 {
+    color: lightgray;
+    color: hsl(208, 100%, 85%);
+}
