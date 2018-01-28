@@ -1,0 +1,167 @@
+/*General*/
+body {
+  color: white;
+  background: black;
+  font-family: Gadget, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ol {
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.pull-left{
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix::after{
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+/*More general*/
+
+header {
+  margin: 20px 125px 0 150px;
+}
+
+nav {
+  position: fixed;
+  margin-top:35px;
+}
+
+/*Button styles*/
+nav a {
+  display: block;
+  background: #A0A0A0;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  border-radius: 4px;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  margin: 15px;
+  color: #193366;
+}
+
+nav a:hover {
+  background: gray;
+  color: white;
+}
+
+nav a:active {
+  font-size: 15px;
+}
+
+.active {
+  color: whitesmoke;
+}
+
+/*END Button style*/
+
+main {
+  position: relative;
+  left: 140px;
+}
+
+article {
+  width: 840px;
+}
+
+section p {
+  color: #9b9b9b;
+}
+
+aside {
+  position: absolute;
+  right: -150px;
+  width: 175px;
+  padding: 15px;
+}
+
+aside ul {
+  padding: 0px;
+}
+
+aside h2 {
+  font-size: 80%;
+}
+
+aside p {
+  font-size: 70%;
+}
+
+aside li {
+  font-size: 75%;
+  margin-top: 20px;
+  
+}
+
+aside li a {
+  color: white;
+  margin-left: 15px;
+  font-style: italic;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*Index page*/
+
+.first-page {
+  width: 40%;
+  height: 500px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/*Contact Page*/
+/*Form*/
+
+.contact {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+input, textarea {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+textarea {
+  height: 150px;
+}
+
+[type="submit"] {
+  color: white;
+  background-color: gray;
+}
+
+[type="submit"]:hover {
+  background-color: darkgrey;
+}
