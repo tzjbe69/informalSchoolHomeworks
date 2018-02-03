@@ -1,0 +1,65 @@
+#pagination { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination p {
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+#prev-page, #next-page {
+    background-color: #3C5B35;
+    color: white;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center
+}
+
+#prev-page:hover, #next-page:hover {
+    cursor: pointer;
+    opacity: 0.8
+}
+#overlay {
+    background-color: #5F9EA0;
+    bottom: 0;
+    cursor: pointer;
+    column-count: 2;
+    display: none;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    resize: yes;
+    width: 100%;
+    z-index: 2;
+}
+
+
+form {
+    color:white;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    border-color: #57824D;
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: ridge;
+    font-family: verdana;
+    font-size: 14px;
+    height: 35px;
+}
+
+.edit-form-title {
+    text-align: center;
+}

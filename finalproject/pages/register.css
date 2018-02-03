@@ -1,0 +1,181 @@
+
+    
+    
+    
+body{
+    background: #f3f7f9;
+    font-family: "Open Sans",sans-serif;;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+
+}
+
+.header {
+    background-color: #0B0D18;
+/*    border-bottom: 2px #D5DACF;
+*/  box-shadow: 1px 1px 1px #D5DACF;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+}
+
+.logo img{
+    width: 25%;
+    height: 70px;
+
+}
+.logo {
+    height: 70px;
+    width: 80%;
+    display:inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.row {
+    border-radius: 5px;
+    background-color: #B8B2B2;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 30px;
+    width:320px;
+    margin:auto;
+}
+
+.row input{
+    border-radius:5px;
+}
+.row p{
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.row h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: vertical;
+    font-size: 12px;
+}
+input[type=checkbox]{
+    width: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=button] {
+    background-color: #AF0909;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background-color: #5E5B5B;
+}
+
+/* style for errors on filds*/
+.error{
+    border-color: red;
+    color: red;
+}
+
+.errors-box{
+    color: red;
+    border: 1px solid red;
+    padding:15px;
+    font-size: 12px;
+    display:none;
+}
+
+.success-box{
+    color: green;
+    border: 1px solid grey;
+    padding:15px;
+    font-weight: bold;
+    display:none;
+    margin: 15px 0;
+}
+.visible{
+    display:block !important;
+    margin-top: 10px;
+}
+
+.invisible{
+    display:none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0B0D18;
+    border-top: double #171a31;
+    color: #D5DACF;
+    font-family: monospace;
+    font-size: 14px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    padding-bottom: 5px;
+
+}
+
+/* responsive */
+
+@media only screen and (max-width: 400px) {
+    
+    /*here we add style for mobile devices*/
+    .container {
+        width: 100%;
+    }
+    .logo {
+        width: 55%;
+        margin: auto;
+    }
+    .logo img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+    body {
+        /*display: none;*/
+    }
+    /* here we add style for tablet devices*/
+    .container {
+        width: 100%;
+    }
+    .logo {
+        width: 55%;
+        margin: auto;
+    }
+    .logo img {
+        width: 55%;
+        align-self: center;
+
+    }
+    .menu {
+        width: 100%;
+    }
+

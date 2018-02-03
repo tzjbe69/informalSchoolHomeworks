@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+header{
+    padding: 25px 175px;
+    background-color: gray;
+    margin: 0px;
+    color: white;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+article {
+    height: 100%;
+    padding: 25px 175px;
+    
+}
+
+footer {
+    background-color: gray;
+    color:white;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+}
+

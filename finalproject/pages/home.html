@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Alpha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script type="text/javascript" src="../utils/utils.js"></script>
+        <script type="text/javascript" src="../models/Auth.js"></script>
+        <script type="text/javascript" src="../models/Movies.js"></script>
+        <script type="text/javascript" src="../models/Movie.js"></script>
+        <script type="text/javascript" src="../models/Search.js"></script>
+        <script type="text/javascript" src="../views/home.js"></script>
+        <script type="text/javascript" src="../views/logout.js"></script>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/responsive.css" type="text/css"/>
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="header">
+            <div class ="container">
+                <div class="logo">
+                    <a href="home.html"><img src="../images/Logo2.jpg" alt="logo"/></a>
+                </div>
+                
+                <div class="menu">
+                    <button id="addBtn">Add Movie</button>
+                    <button id="logout">Logout</button>
+                    <button class="signin" formaction="login.html">Sign In</button>
+                    <button class="homebutton" formaction="home.html">Home</button>
+                    <button class="about" formaction="about.html">About</button>
+                    <svg id="search-icon" class="search-icon" height="25" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M19.427 21.427a8.5 8.5 0 1 1 2-2l5.585 5.585c.55.55.546 1.43 0 1.976l-.024.024a1.399 1.399 0 0 1-1.976 0l-5.585-5.585zM14.5 21a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z" fill="white" fill-rule="evenodd"/></svg>
+                    <span class="register-text">Don't have an account? Register<a href="register.html">here</a>!</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- forumalrul de cautare -->
+        <div id="search-section" class="search-section">
+            <div class="container">
+                <form id="search-form">
+                    <input id="query" type="text" name="search" placeholder="Search" autocomplete="off"  />
+                    
+                    <select id="advanced">
+                        <option value="title" selected="selected">Title</option>
+                        <option value="year">Year</option>
+                        <option value="genre">Genre</option>
+                        <option value="language">Language</option>
+                        <option value="country">Country</option>
+                    </select>
+                    <input type="submit" id="submit" value="Search" />
+                </form>
+            </div>
+        </div>
+        
+        <div class="list-container">
+            <div class="top-movies">
+                <h4>Top movies</h4>
+                <div id="top-movies"></div>
+            </div>
+            <div id="search-results">
+            </div>
+           
+            <div class="art-container">
+               <div class="article">
+                   <div id="loading">
+                       <span>Loading </span>
+                       <div class="bounce1"></div>
+                       <div class="bounce2"></div>
+                       <div class="bounce3"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="pagination">
+                <p id='prev-page'><</p>
+                <p id="current-page"></p>
+                <p id="next-page">></p>
+            </div>   
+        </div>
+        <div class ="footer">
+            <p>&copy2018 Team Alpha</p>
+        </div>
+            
+    </body>
+</html>
+
+
+    
+    

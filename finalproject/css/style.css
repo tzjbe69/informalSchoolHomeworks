@@ -1,0 +1,419 @@
+
+
+body {
+    font-family: Georgia, Times, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* the background -image from html*/
+    background-image: url("../images/background-blurred.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Movies list*/
+.article  {
+    width: 100%;
+}
+.article div {
+    width: 50%;
+    float: left;
+    background-color: #eaeaea;
+    padding: 0 25px;
+    box-sizing: border-box;
+    border: 1px solid #C5BCBC;
+    height: 350px;
+}
+
+.article p {
+    width: 55%;
+    float: right;
+    font-family: Tahoma;
+}
+.article img {
+    float:left;
+    width: 40%;
+}
+
+.article h3 {
+    /*font-family: Fantasy;*/
+    font-weight: bold;
+}
+.art-container {
+    border-bottom: double #171a31;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    position: relative;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #0B0D18;
+    border-top: double #171a31;
+    color: #D5DACF;
+    font-family: monospace;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer p {
+    padding-bottom: 5px;
+
+}
+
+.header {
+    background-color: #0B0D18;
+/*    border-bottom: 2px #D5DACF;
+*/  box-shadow: 1px 1px 1px #D5DACF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header button {
+    background-color: #AF0909;
+    border-color: #D5DACF;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 15px;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    height: 35px;
+}
+
+.header form {
+    color:white;
+}
+
+.header input {
+    bottom: 0;
+    border-color: #57824D;
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: ridge;
+    font-family: verdana;
+    font-size: 14px;
+    height: 35px;
+}
+
+/* about logo-image in header div*/
+.logo img{
+    width: 25%;
+    float: left;
+    height: 70px;
+
+}
+.logo {
+    height: 70px;
+    width: 80%;
+    display:inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.list-container {
+    background-color: white;
+    border-left: ridge #D5DACF;
+    border-right: ridge #D5DACF;
+    box-shadow: 2px 2px 2px black;
+    margin: auto;
+    max-width: 1100px;
+    padding-top: 90px;
+}
+
+/* about menu div from header*/
+.menu {
+    width: 45%;
+    float: right; 
+    position: relative;
+    text-align: right;
+    padding-top: 30px;
+    font-size: 14px;
+
+}
+
+.menu span {
+    color: white;
+    padding-top: 5px;
+}
+
+.menu a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #918B8B ;
+}
+
+
+/* all about search*/
+.search-icon{
+    cursor: pointer;
+}
+
+.search-icon :hover {
+    color: red;
+}
+.search-section{
+    top: 100px;
+    left: 0;
+    background-color: #211F1F;
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    float: right;
+    transition: opacity 250ms ease;
+    position: fixed;
+    display: none;
+}
+
+.search-section.visible {
+    display: block;
+}
+.search-section input[type="text"] {
+    width: 80%;
+    border:0;
+    border-radius:0;
+    float:left;
+    display: inline-block;
+    height: 44px;
+    box-sizing: border-box;
+}
+
+.search-section input[type="submit"] {
+    width: 10%;
+    border:0;
+    border-radius:0;
+    background-color: #000;
+    color:white;
+    float:right;
+    display: inline-block;
+    height: 44px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.search-section form {
+    width: 100%;
+    /*background-color: blue;*/
+    font-size: 0;
+    box-sizing: border-box;
+
+}
+.top-movies {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #DAC7E0;
+    top: 120px;
+}
+.top-movies h4{
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 35px;
+}
+
+.top-movies ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 75%;
+    text-decoration: none;
+    color: #AF0909;
+}
+
+.top-movies ol li {
+    margin-left: 4%;
+}
+
+a {
+    text-decoration: none;
+    color: #AF0909;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+#pagination { 
+    width: 100%;
+    align-items: center;
+    border-top: double #171a31;
+    display: flex;
+    justify-content: center;
+    background-color: #9C80A5;
+}
+
+#pagination p {
+    padding: 3px 3px;
+    font-size: 13px;
+}
+
+#prev-page, #next-page {
+    background-color: #AF0909;
+    color: white;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center
+}
+
+#prev-page:hover, #next-page:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    color: black;
+}
+
+#overlay {
+    background-color: #5F9EA0;
+    bottom: 0;
+    cursor: pointer;
+    column-count: 2;
+    display: none;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    resize: yes;
+    width: 100%;
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    border-color: #57824D;
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: ridge;
+    font-family: verdana;
+    font-size: 14px;
+    height: 35px;
+}
+
+.edit-form-title {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#overlay {
+    background-color: #5F9EA0;
+    bottom: 0;
+    cursor: pointer;
+    column-count: 2;
+    display: none;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    resize: yes;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/*Movies list*/
+.article  {
+    width: 100%;
+    
+}
+.article div {
+    width: 50%;
+    float: left;
+    background-color: #eaeaea;
+}
+
+
+#loading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 250% !important;
+    margin: 10% 0;
+    width: 100%;
+}
+
+/*In case the page is taking longer time to load... here is the style and animation*/
+
+#loading > div {
+    padding: 0;
+    border-radius: 100%;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    width: 18px;
+    height: 18px;
+    background-color: #AF0909;
+}
+
+#loading .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+#loading .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+/* About team-css */
+
+.team-list {
+    background-color: red;
+    width: 100%;
+    top: 100px;
+}
+
+
+
+
+

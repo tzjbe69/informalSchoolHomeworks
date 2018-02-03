@@ -1,0 +1,139 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* the background -image from html*/
+    background-image: url("../images/background-blurred.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0B0D18;
+    border-top: double #171a31;
+    color: #D5DACF;
+    font-family: monospace;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    
+}
+
+.footer p {
+    padding-bottom: 5px;
+
+}
+
+.header {
+    background-color: #0B0D18;
+/*    border-bottom: 2px #D5DACF;
+*/  box-shadow: 1px 1px 1px #D5DACF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:999;
+}
+
+.header button {
+    background-color: #AF0909;
+    border-color: #D5DACF;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 15px;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    height: 35px;
+}
+
+.header form {
+    color:white;
+}
+
+.header input {
+    bottom: 0;
+    border-color: #57824D;
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: ridge;
+    font-family: verdana;
+    font-size: 14px;
+    height: 35px;
+}
+
+/* about logo-image in header div*/
+.logo img{
+    width: 25%;
+    float: left;
+    height: 70px;
+
+}
+.logo {
+    height: 70px;
+    width: 80%;
+    display:inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* about menu div from header*/
+.menu {
+    width: 45%;
+    float: right; 
+    position: relative;
+    text-align: right;
+    padding-top: 30px;
+    font-size: 14px;
+
+}
+
+.menu span {
+    color: white;
+    padding-top: 5px;
+}
+
+.menu a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #918B8B ;
+}
+
+/* About team-css */
+
+.team-list {
+    background-color: #979797;
+    width: 100%;
+    top: 100px;
+    height: 100vh;
+}
+.team-list a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #918B8B ;
+    color: black;
+}
+.team-list ul {
+    list-style-type: decimal;
+}
+
+
+
+
+

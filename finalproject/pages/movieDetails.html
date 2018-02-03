@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../utils/utils.js"></script>
+        <script type="text/javascript" src="../models/Auth.js"></script>
+        <script type="text/javascript" src="../models/Movie.js"></script>
+        <script type="text/javascript" src="../views/movie-details.js"></script>
+        <script type="text/javascript" src="../views/edit-movie.js"></script>
+        <script type="text/javascript" src="../views/delete-movie.js"></script>
+        <!--<link rel="stylesheet" href="../css/style.css" type="text/css"/>-->
+        <link rel="stylesheet" href="../css/responsive.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/moviedetails-style.css" type="text/css"/>
+        <title>Movie details</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class ="container">
+                <div class="logo">
+                    <img src="../images/Logo2.jpg" alt="logo"/>
+                </div>
+                <div class="menu">
+                    <button id="addBtn">Add Movie</button>
+                    <button id="logout">Logout</button>
+                    <button class="homebutton">Home</button>
+                    <button class="about">About</button>
+                    <button class="signin">Sign In</button>
+                    <!--<svg id="search-icon" class="search-icon" height="25" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M19.427 21.427a8.5 8.5 0 1 1 2-2l5.585 5.585c.55.55.546 1.43 0 1.976l-.024.024a1.399 1.399 0 0 1-1.976 0l-5.585-5.585zM14.5 21a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z" fill="white" fill-rule="evenodd"/></svg>-->
+                    <!--<span class="register-text">Don't have an account?  Register <a href="register.html">here</a>!</span>-->
+                </div>
+            </div>
+        </div>
+        <div id='content'>
+            <div class="list-container">
+                <button id="deleteBtn" style="float:right">Delete</button>
+                <button id="editBtn" style="float:right" onclick="on()">Edit</button>
+                <div id='movie-display'></div>
+            </div>
+            <div id="overlay" class="container">
+                        <div class="edit-form-title">
+                            <h1>Edit form</h1>    
+                        </div>   
+                        <div id="panel" class="panel-body">
+                            <div class="form">
+                                <form scrolling="auto">
+                                    Title: <input type="text" name="title" id="movie-title"><br>
+                                    Plot: <input type="text" name="plot" id="movie-plot"><br>
+                                    Year: <input type="text" name="year" id="movie-year"><br>
+                                    Released: <input type="text" name="released" id="released"><br>
+                                    Rated: <input type="text" name="rated" id="movie-rates"><br>
+                                    Genre: <input type="text" name="genre" id="movie-genre"><br>
+                                    IMDB Note: <input type="text" name="imdbNote" id="imdb-note"><br>
+                                    IMDB Votes: <input type="text" name="imdbVotes" id="imdb-votes"><br>
+                                    Runtime: <input type="text" name="runtime" id="movie-runtime"><br>
+                                    Directors: <input type="text" name="directors" id="movie-directors"><br>
+                                    Writer: <input type="text" name="writers" id="movie-writer"><br>
+                                    Actors: <input type="text" name="actors" id="movie-actors"><br>
+                                    Country: <input type="text" name="country" id="movie-country"><br>
+                                    Awards: <input type="text" name="awards" id="movie-awards"><br>
+                                    Language: <input type="text" name="language" id="movie-language"><br>
+                                    Production: <input type="text" name="production" id="movie-production"><br>
+                                    Metascore: <input type="text" name="metascore" id="movie-metascore"><br>
+                                    Website: <input type="text" name="website" id="movie-website"><br>
+                                    Type: <input type="text" name="type" id="movie-type"><br>
+                                    <div class="form-buttons">
+                                        <button type="submit" form="form1" value="Submit" id="btnSubmit" onclick=submit()>Submit</button>
+                                        <button id="cancel" class="button">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        <div class ="footer">
+            <p>&copy2018 Team Alpha</p>
+        </div>
+    </body>
+</html>

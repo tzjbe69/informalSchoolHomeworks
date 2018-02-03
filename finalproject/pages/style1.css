@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family:helvetica;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display:block;
+}
+
+.pull-left {
+    float:left;
+}
+
+.pull-right {
+    float:right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff3333;
+}
+
+li {
+    border-right: 1px solid #bbb;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #e60000 (red) on hover */
+li a:hover {
+    background-color:#e60000;
+}
+
+header {
+    background-color: url("http://www.nmgncp.com/data/out/134/4729126-free-film-wallpaper-clip-art.jpg");
+    border: solid 10px black;
+    border-style: double;
+    font-family: Helvetica;
+    height: 150px;
+    text-align: center;
+}
+
+h1{
+    font-family: "Verdana";
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.home-button { 
+    margin-left: 17px;
+}
+
+
+.search a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+.searchbar {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px 10px;
+    /*margin: 8px 0;*/
+}
+
+.searchbutton {
+    /* If the button should be red: background-color:#ff3333;*/
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+#img-header {
+      padding-left: 10px;
+      height: 130px;
+      width: 600px;
+}
+
+
+main {
+    border: solid 2px black;
+    border-top: none;
+    border-top-style: none;
+    border-style: double;
+    margin: 0 auto;
+    width: 800px;
+}
+
+article {
+    width: 500px;
+}
+
+aside {
+    width: auto;
+}
+
+#pagination { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination p {
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+#prev-page, #next-page {
+    background-color: #3C5B35;
+    color: white;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center
+}
+
+#prev-page:hover, #next-page:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8
+}
+
+footer {
+    background-color: #222;
+    bottom: 0;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+

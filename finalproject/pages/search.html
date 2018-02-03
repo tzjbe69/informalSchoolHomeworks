@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Alpha</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../utils/utils.js"></script>
+        <script type="text/javascript" src="../models/Auth.js"></script>
+        <script type="text/javascript" src="../models/Movies.js"></script>
+        <script type="text/javascript" src="../models/Search.js"></script>
+        <script type="text/javascript" src="../views/home.js"></script>
+        <script type="text/javascript" src="../views/logout.js"></script>
+        <script type="text/javascript" src="../views/search.js"></script>
+        
+    </head>
+    <body>
+        <div class="search">
+            <form id="search-form">
+                <input id="query" type="text" name="search" placeholder="Search" autocomplete="off"  /> 
+                <input type="submit" id="submit" value="Search" />
+            </form>
+            <button class="signin">Sign In</button>
+            <button id="logout">Logout</button>
+            <span class="register-text">Don't have an account? Register <a href="Register.html">here</a>!</span>
+        </div>
+        
+        <div id="search-results">
+        
+        </div>
+        
+        <div class="art-container">
+            <a href=""><span class="search-title"></span></a>
+            <span class="search-year"></span>
+            <p class="search-year"></p>
+            <p class="search-runtime"></p>
+            <p class="search-genre"></p>
+            <a href=""><img class="search-poster" src=""></a>
+        </div>
+    </body>
+</html>

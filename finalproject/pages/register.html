@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="register.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../models/Auth.js"></script>
+        <script type="text/javascript" src="../views/register.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class ="container">
+                <div class="logo">
+                    <a href="home.html"><img src="../images/Logo2.jpg" alt="logo"/></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Create account</h2>
+            <div id="success" class="success-box"></div>
+            <p id="go-to-login" class="invisible">Go to <a href="login.html">Log-in page</a></p> 
+            <div id="registration-form">
+                <form >
+                    <p>Your name</p>
+                    <input type="text" id="username" name="name" value="" pattern="[a-z]{1,15}" required>
+                    <p>Password</p>
+                    <input id="userpassword" type="password"  value="" required="">
+                    <input id="showpassword" type="checkbox">Show Password
+                    <input id="submit" type="button" value="Submit">
+                </form>
+                <p>Already have an account?  <a href="login.html">Log in</a> </p>  
+            </div>
+            <div id="errors" class="errors-box"></div>
+        </div>
+         <div class ="footer">
+            <p>&copy2018 Team Alpha</p>
+        </div>
+    </body>
+</html>
